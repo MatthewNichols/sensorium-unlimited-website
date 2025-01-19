@@ -4,9 +4,12 @@
 module.exports = function(eleventyConfig) {
   
   eleventyConfig.addPassthroughCopy({"./src/assets/img/": "img"});
+  eleventyConfig.addPassthroughCopy({"./src/assets/template/images/": "images"});
   eleventyConfig.addPassthroughCopy({"./src/assets/fonts/": "fonts"});
   eleventyConfig.addPassthroughCopy({"./client-side-compiled/**/*": "scripts"});
+  eleventyConfig.addPassthroughCopy({"./src/assets/template/js-libs/": "scripts/libs"});
   eleventyConfig.addPassthroughCopy({"./styles-compiled/**/*": "styles"});
+  eleventyConfig.addPassthroughCopy({"./src/assets/template/css/": "css"});
   
   //eleventyConfig.addPassthroughCopy({"./src/copy-to-root/*": "."});
 
