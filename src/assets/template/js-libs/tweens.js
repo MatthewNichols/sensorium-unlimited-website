@@ -4,8 +4,8 @@ function getRandomFromRange(min, max){
   return Math.random() * (max - min) + min;
 }
 
-include('scripts/libs/greensock/TweenMax.min.js');
-include('scripts/libs/jquery.superscrollorama.js');
+include('/scripts/libs/greensock/TweenMax.min.js');
+include('/scripts/libs/jquery.superscrollorama.js');
 
 $(function(){
   if ($('html').hasClass('desktop')) {

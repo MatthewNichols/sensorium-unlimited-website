@@ -53,4 +53,4 @@ var currentYear = (new Date).getFullYear();
 
 
 function include(url){document.write('<script type="text/javascript" src="'+url+'"></script>')}
-include('scripts/libs/device.js');
+include('/scripts/libs/device.js');
