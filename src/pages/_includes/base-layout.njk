@@ -1,3 +1,4 @@
+{% import "components/page-parts.njk" as parts %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,11 +51,11 @@
   <![endif]-->
 </head>
 <body id="{{bodyId}}" class="{{bodyClass}}">
-  {% include "components/header.njk" %}
-  
+  {{ parts.header() }}
+
   {{ content | safe }}
 
-  {% include "components/footer.njk" %}
+  {{ parts.footer() }}
 
   <script src="/scripts/index.js"></script>
 </body>
