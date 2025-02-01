@@ -50,7 +50,11 @@
   <![endif]-->
 </head>
 <body id="{{bodyId}}" class="{{bodyClass}}">
+  {% include "components/header.njk" %}
+  
   {{ content | safe }}
+
+  {% include "components/footer.njk" %}
 
   <script src="/scripts/index.js"></script>
 </body>
